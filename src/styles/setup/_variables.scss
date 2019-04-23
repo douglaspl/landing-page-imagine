@@ -49,6 +49,46 @@ xl: 112.5rem, //1200px // Extra large screen / wide desktop
 
 
 //------------------------------------
+//    #DIRECTIONS
+//------------------------------------
+ // Não mexer.
+ $directions: 'top', 'right', 'bottom', 'left';
+ $perpendiculars: 'v', 'h';
+ 
+ 
+ 
+ 
+ 
+ //------------------------------------
+ //    #DISTANCES
+ //------------------------------------
+ $distance--xxs: .25rem;
+ $distance--xs: .5rem;
+ $distance--sm: 1rem;
+ $distance--md: 1.5rem;
+ $distance--lg: 2rem;
+ $distance--xl: 2.5rem;
+ $distance--xxl: 3.5rem;
+ $distance--xxxl: 5rem;
+ 
+ $distance--super: 6rem;
+ $distance--max: 8rem;
+ 
+ $distances: (
+     (xxs, $distance--xxs),
+     (xs, $distance--xs),
+     (sm, $distance--sm),
+     (md, $distance--md),
+     (lg, $distance--lg),
+     (xl, $distance--xl),
+     (xxl, $distance--xxl)
+ );
+
+
+
+
+
+//------------------------------------
 //    #COLORS
 //------------------------------------
 // https://www.colorbox.io/#steps=7#hue_start=80#hue_end=88#hue_curve=easeInQuad#sat_start=4#sat_end=90#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=30#lum_curve=linear#lock_hex=#97c454#minor_steps_map=0
