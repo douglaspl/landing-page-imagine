@@ -30,7 +30,6 @@
         flex: 1;
         margin-bottom: $distance--xxl;
         margin-top: $distance--xxl;
-        max-width: 34rem;
         position: relative;
         text-align: center;
         z-index: 2;
@@ -38,8 +37,11 @@
         @include media('>md') {
             margin-right: $distance--lg;
             margin-right: calc(#{$distance--lg} + 1vw);
-            max-width: none;
             text-align: left;
+        }
+
+        img {
+            width: 80%;
         }
 
     }
@@ -48,32 +50,30 @@
         align-items: flex-end;
         display: flex;
         flex-direction: row;
-        height: 35vh;
         margin-left: $distance--md;
         margin-right: $distance--md;
 
         @include media('>md') {
-            flex: 1;
+            flex: 2;
             margin-top: auto;
         }
     }
 
     &__subtitle {
-        font-size: 1rem;
-        letter-spacing: .2em;
+        font-family: $font--base;
+        font-size: 1.15rem;
+        line-height: 1.2;
         margin-bottom: $distance--xl;
-        opacity: .8;
         text-transform: uppercase;
     }
 
     &__title {
         font-family: $font--title;
-        font-size: 2.25rem;
-        font-size: calc(1rem + 1vw);
+        font-size: 1.25rem;
+        font-size: calc(1rem + .35vw);
         font-weight: 900;
-        letter-spacing: -.015em;
         line-height: 1.2;
-        margin-bottom: $distance--md;
+        margin: 1em 0;
         text-transform: uppercase;
 
         @include media('>md') {
@@ -83,86 +83,7 @@
     }
 
     &__image {
-        bottom: 0;
-        position: absolute;
-        right: 0;
-        width: 100vw;
         z-index: 2;
-
-        @include media('>sm') {
-            width: 65vw;
-        }
-
-        @include media('>md') {
-            width: 55vw;
-        }
-    }
-
-    &__capsule {
-        border-radius: $radius--capsule;
-        height: 2rem;
-        width: 20rem;
-
-        &--top {
-            background-color: $green-5;
-            bottom: 35%;
-            box-shadow: $shadow-3;
-            filter: blur(4px);
-            height: 6vmax;
-            opacity: .5;
-            position: absolute;
-            right: 18vw;
-            width: 60%;
-            z-index: 1;
-
-            @include media('>md') {
-                bottom: 55%;
-                height: 5vmax;
-                right: 8vw;
-                width: 40%;
-            }
-
-        }
-
-        &--mid {
-            background-color: $green-60;
-            bottom: 22%;
-            box-shadow: $shadow-4;
-            filter: blur(6px);
-            height: 5vmax;
-            opacity: .75;
-            position: absolute;
-            right: 20vw;
-            width: 45%;
-            z-index: 1;
-
-            @include media('>md') {
-                bottom: 35%;
-                height: 4vmax;
-                right: 12vw;
-            }
-
-        }
-
-        &--bot {
-            background-color: $color-white;
-            bottom: 5%;
-            box-shadow: $shadow-4;
-            filter: blur(2px);
-            height: 6vmax;
-            opacity: .75;
-            position: absolute;
-            right: 10vw;
-            width: 80%;
-            z-index: 1;
-
-            @include media('>md') {
-                bottom: 10%;
-                right: 4vw;
-                width: 45%;
-            }
-
-        }
     }
 
     &__cta {

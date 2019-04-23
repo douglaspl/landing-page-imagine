@@ -5,7 +5,6 @@
 
     &__container {
         @include media('>lg') {
-            height: $header-height;
             padding: 0 $distance--xxl;
         }
 
