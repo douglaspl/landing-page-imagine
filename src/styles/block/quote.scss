@@ -1,0 +1,32 @@
+.quote {
+    &__citation{
+        font-size: 1.5rem;
+    }
+
+    &__avatar {
+        $size: 5rem;
+
+        border-radius: 50%;
+        height: $size;
+        margin: $distance--lg auto $distance--xs;
+        position: relative;
+        overflow: hidden;
+        width: $size;
+
+        > * {
+            left: 50%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+    }
+
+    &__author {
+        font-style: normal;
+        font-weight: bold;
+    }
+
+}

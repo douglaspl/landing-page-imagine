@@ -1,0 +1,15 @@
+.capsule {
+    background-color: $color-gray--lightest;
+    border-radius: $radius--capsule;
+    box-shadow: $shadow-5;
+    color: $color-gray--darkest;
+    line-height: 1.5;
+    padding: $distance--md $distance--xl;
+    text-align: center;
+
+    &--primary-darkest {
+        background-color: $green-60;
+        color: $color-white;
+    }
+
+}

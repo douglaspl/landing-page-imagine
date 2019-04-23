@@ -1,0 +1,27 @@
+.mid-element {
+    height: 0;
+    position: relative;
+    z-index: 2;
+
+    > * {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 96%;
+
+        @include media('>lg') {
+            width: auto;
+        }
+
+    }
+
+    + * {
+        padding-top: $distance--super * 1.5;
+    }
+
+    &-previous {
+        padding-bottom: $distance--super * 1.5;
+    }
+
+}

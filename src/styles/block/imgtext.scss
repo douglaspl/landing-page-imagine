@@ -1,0 +1,55 @@
+.imgtext {
+    > * {
+        justify-content: center;
+    }
+
+    > * + * {
+        margin-top: $distance--xl;
+    }
+
+    @include media('>lg') {
+        > *:first-child {
+            text-align: right;
+        }
+
+        > *:last-child {
+            text-align: left;
+        }
+
+        &[class*='reverse'] {
+            > *:first-child {
+                text-align: left;
+            }
+
+            > *:last-child {
+                text-align: right;
+            }
+        }
+
+
+    }
+
+    &__img {
+        min-height: 30vh;
+    }
+
+    &__icon {
+        color: $green-40;
+        font-size: 12rem;
+        font-size: calc(12rem + 1vw);
+        line-height: 1.25;
+        opacity: 1;
+        text-shadow: 3px 3px 8px transparentize($green-60, .5);
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        text-align: center;
+
+        @include media('>md') {
+            text-align: left;
+        }
+
+    }
+
+}

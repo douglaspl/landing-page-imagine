@@ -1,0 +1,84 @@
+html,
+body {
+    background-color: $color-gray--dark;
+    color: $color-gray--light;
+    font-family: $font--base;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+
+    @include media('>lg') {
+        font-size: 16px;
+    }
+
+}
+
+main {
+    height: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font--title;
+}
+
+p {
+    font-size: 1.2rem;
+
+    & + & {
+        margin-top: 1.5rem;
+    }
+
+}
+
+blockquote {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    justify-content: center;
+    min-height: 10rem;
+    overflow: hidden;
+    padding: $distance--md;
+    position: relative;
+    quotes: '\201c' '\201d';
+    text-align: center;
+
+    &::before {
+        content: open-quote close-quote;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 40rem;
+        left: 50%;
+        line-height: .25;
+        opacity: .05;
+        position: absolute;
+        top: calc(50% + .375em);
+        transform: translate(-50%, -85%);
+    }
+
+}
+
+a {
+    color: inherit;
+    font-style: none;
+}
+
+a,
+button {
+
+    &:focus {
+        box-shadow: 0 0 0 .2rem transparentize($green-5, .5);
+        outline: 0 solid transparent;
+    }
+
+}

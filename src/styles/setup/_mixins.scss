@@ -1,0 +1,27 @@
+//------------------------------------
+//    #LINE
+//------------------------------------
+@mixin line($color: $green-40, $height: .15em, $width: 4rem, $line: 'under') {
+    position: relative;
+    margin-bottom: calc(#{$distance--super} + 1vw);
+
+    &::after {
+        background-color: $color;
+        border-radius: $radius--capsule;
+        content: '';
+        height: $height;
+        left: 0;
+        position: absolute;
+        width: $width;
+
+        @if $line == 'under' {
+          top: calc(100% + .5em);
+        }
+
+        @if $line == 'left' {
+          bottom: $height;
+        }
+
+    }
+
+}

@@ -1,0 +1,44 @@
+.btn {
+    border-radius: 99px;
+    border: 1px solid transparent;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: .5em 1.5em;
+    text-align: center;
+    transition: 300ms;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &--primary {
+        background-color: $green-20;
+        color: $color-white;
+    }
+
+    &--primary--outline {
+        background-color: transparent;
+        background-image: none;
+        border-color: $green-5;
+        color: $green-5;
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $green-60;
+    }
+
+    &--white--outline {
+        background-color: transparent;
+        background-image: none;
+        border-color: $color-white;
+        color: $color-white;
+    }
+
+    &--xs { font-size: .75rem; }
+    &--sm { font-size: .825rem; }
+
+}
