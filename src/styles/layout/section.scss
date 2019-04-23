@@ -4,11 +4,12 @@
 
     &__title {
         color: $color-white;
-        font-size: 2rem;
-        font-size: calc(1.25rem + 1vw);
+        font-size: 1.5rem;
+        font-size: calc(1.25rem + .25vw);
         line-height: 1.5;
         margin: 0 auto $distance--lg;
         max-width: 90%;
+        text-align: center;
 
         @include media('>md') {
             margin-bottom: $distance--xxl;

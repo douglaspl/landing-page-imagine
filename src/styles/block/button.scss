@@ -1,6 +1,7 @@
 .btn {
     border-radius: 99px;
     border: 1px solid transparent;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0);
     display: inline-block;
     font-size: 1rem;
     font-weight: 700;
@@ -17,6 +18,13 @@
     &--primary {
         background-color: $green-20;
         color: $color-white;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+            transform: translateY(-2px);
+        }
+
     }
 
     &--primary--outline {
