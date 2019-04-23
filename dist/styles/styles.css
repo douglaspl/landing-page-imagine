@@ -934,10 +934,11 @@ button:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1.25rem 0.5rem; }
+    padding: 1rem 0.5rem; }
     @media (min-width: 75.1rem) {
       .header__container {
-        padding: 0 3rem; } }
+        padding-left: 3rem;
+        padding-right: 3rem; } }
   .header__nav {
     max-height: 0;
     overflow: hidden;

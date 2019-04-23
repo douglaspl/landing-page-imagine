@@ -5,14 +5,15 @@
 
     &__container {
         @include media('>lg') {
-            padding: 0 $distance--xxl;
+            padding-left: $distance--xxl;
+            padding-right: $distance--xxl;
         }
 
         align-items: center;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 1.25rem $distance--xs;
+        padding: $distance--md $distance--xs;
     }
 
     &__nav {
