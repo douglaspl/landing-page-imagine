@@ -927,9 +927,10 @@ button:focus {
 
 .header {
   background-color: #189a55;
-  background-image: url(images/leaf-1.png), url(images/leaf-2.png), url(images/leaf-3.png);
-  background-position: center center, center center, center center;
+  background-image: url(../images/leaf-1.png), url(../images/leaf-2.png), url(../images/leaf-3.png);
+  background-position: -130px 90%, 550px 50px, 900px -225px;
   background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 15%, 18%, 15%;
   color: #cfd3d1;
   z-index: 300; }
   .header__container {
@@ -937,11 +938,7 @@ button:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1rem 0.5rem; }
-    @media (min-width: 75.1rem) {
-      .header__container {
-        padding-left: 3rem;
-        padding-right: 3rem; } }
+    padding: 1rem 0; }
   .header__nav {
     max-height: 0;
     overflow: hidden;
