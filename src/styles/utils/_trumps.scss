@@ -12,33 +12,14 @@
     // }
 
     @include media('>lg') {
-        max-width: 960px;
+        // max-width: 960px;
+        max-width: 1080px;
     }
 
     @include media('>xl') {
-        max-width: 1140px;
+        // max-width: 1140px;
+        max-width: 1620px;
     }
-}
-
-.line {
-    @include line;
-
-    &--primary-lightest {
-
-        &::after {
-            background-color: $green-5;
-        }
-
-    }
-
-    &--center {
-        &::after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-    }
-
 }
 
 .img-as-bg {
