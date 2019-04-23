@@ -41,7 +41,14 @@
         }
 
         img {
+            margin-bottom: $distance--md;
+            margin-left: auto;
+            margin-right: auto;
             width: 80%;
+
+            @include media('>md') {
+                margin-bottom: 0;
+            }
         }
 
     }
