@@ -1,1 +1,168 @@
+//------------------------------------
+//    #TITLES
+//------------------------------------
+@mixin title-0 ($size: $font-size--xxl,
+                $size--sm: $font-size--super,
+                $size--lg: $font-size--max,
+                $weight: 800,
+                $letter: $letter-spacing--sm) {
 
+  font-family: 'Raleway', 'Titillium Web', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letter;
+  line-height: 1.25;
+  vertical-align: middle;
+
+  @include media('>sm') {
+    font-size: $size--sm;
+  }
+
+  @include media('>lg') {
+    font-size: $size--lg;
+  }
+
+  @include media('>xl') {
+    font-size: calc(#{$size--lg} + .5vw);
+  }
+
+}
+
+@mixin title-1 ($size: $font-size--lg,
+                $size--sm: $font-size--xl,
+                $size--lg: $font-size--xxl,
+                $weight: 900,
+                $letter: $letter-spacing--lg) {
+
+  font-family: 'Raleway', 'Titillium Web', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letter;
+  line-height: 1.25;
+  // text-transform: uppercase;
+  vertical-align: middle;
+
+  @include media('>sm') {
+    font-size: $size;
+  }
+
+  @include media('>md') {
+    font-size: $size--sm;
+  }
+
+  @include media('>lg') {
+    font-size: $size--lg;
+  }
+
+}
+
+@mixin title-2 ($size: $font-size--md,
+                $size--sm: $font-size--lg,
+                $size--lg: $font-size--xl,
+                $weight: normal,
+                $letter: $letter-spacing--md) {
+
+  font-family: 'Raleway', 'Titillium Web', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letter;
+  line-height: 1.25;
+  vertical-align: middle;
+
+  @include media('>sm') {
+    font-size: $size--sm;
+  }
+
+  @include media('>lg') {
+    font-size: $size--lg;
+  }
+
+}
+
+@mixin title-2--u ( $size: $font-size--sm,
+                    $size--sm: $font-size--md,
+                    $size--lg: $font-size--lg,
+                    $weight: normal,
+                    $letter: $letter-spacing--xl) {
+
+  font-family: 'Raleway', 'Titillium Web', sans-serif;
+  font-size: calc(#{$size} + .75vw);
+  font-weight: $weight;
+  letter-spacing: $letter;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  // @include media('>sm') { font-size: $size--sm; }
+  // @include media('>lg') { font-size: $size--lg; }
+}
+
+@mixin title-3 ($size: $font-size--sm,
+                $size--sm: $font-size--md,
+                $size--lg: $font-size--lg,
+                $weight: 400,
+                $letter: $letter-spacing--md) {
+
+  font-family: 'Titillium Web', 'Raleway', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letter;
+  opacity: .85;
+  vertical-align: middle;
+
+  @include media('>sm') {
+    font-size: $size--sm;
+  }
+
+  @include media('>lg') {
+    font-size: $size--lg;
+  }
+}
+
+@mixin title-3--alt ( $size: $font-size--xs,
+                      $size--lg: $font-size--sm,
+                      $weight: 600,
+                      $letter: $letter-spacing--lg) {
+
+  $width: .5em;
+
+  font-family: 'Titillium Web', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letter;
+  line-height: 1.5;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  @include media('>lg') {
+    font-size: $size--lg;
+  }
+
+}
+
+@mixin title-4 ($size: $font-size--xs,
+                $size--lg: $font-size--sm,
+                $weight: normal,
+                $letter: $letter-spacing--md) {
+
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $letter;
+  vertical-align: middle;
+
+  @include media('>lg') {
+    font-size: $size--lg;
+  }
+}
+
+@mixin title-aux ($color: $green-50,
+                  $display: inline-block,
+                  $weight: 400) {
+
+  color: $color;
+  display: $display;
+  font-size: $font-size--xxs;
+  font-weight: $weight;
+  letter-spacing: $letter-spacing--xl;
+  text-transform: uppercase;
+  vertical-align: middle;
+}

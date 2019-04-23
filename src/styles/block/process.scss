@@ -1,0 +1,22 @@
+.process {
+    $this: &;
+
+    text-align: center;
+
+    &__col {
+        padding-left: $distance--md;
+        padding-right: $distance--md;
+    }
+
+    &__title {
+        color: $leaf-30;
+        line-height: 1;
+        margin-bottom: $distance--md;
+        min-height: 2em;
+    }
+
+    &__link {
+        font-size: .75em;
+        margin-top: 0;
+    }
+}

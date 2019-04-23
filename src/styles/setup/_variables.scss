@@ -45,38 +45,40 @@ xl: 112.5rem, //1200px // Extra large screen / wide desktop
 //------------------------------------
 //    #DIRECTIONS
 //------------------------------------
- // Não mexer.
- $directions: 'top', 'right', 'bottom', 'left';
- $perpendiculars: 'v', 'h';
+// Não mexer.
+$directions: 'top',
+'right',
+'bottom',
+'left';
+$perpendiculars: 'v',
+'h';
 
 
 
 
 
- //------------------------------------
- //    #DISTANCES
- //------------------------------------
- $distance--xxs: .25rem;
- $distance--xs: .5rem;
- $distance--sm: 1rem;
- $distance--md: 1.5rem;
- $distance--lg: 2rem;
- $distance--xl: 2.5rem;
- $distance--xxl: 3.5rem;
- $distance--xxxl: 5rem;
+//------------------------------------
+//    #DISTANCES
+//------------------------------------
+$distance--xxs: .25rem;
+$distance--xs: .5rem;
+$distance--sm: 1rem;
+$distance--md: 1.5rem;
+$distance--lg: 2rem;
+$distance--xl: 2.5rem;
+$distance--xxl: 3.5rem;
+$distance--xxxl: 5rem;
 
- $distance--super: 6rem;
- $distance--max: 8rem;
+$distance--super: 6rem;
+$distance--max: 8rem;
 
- $distances: (
-     (xxs, $distance--xxs),
-     (xs, $distance--xs),
-     (sm, $distance--sm),
-     (md, $distance--md),
-     (lg, $distance--lg),
-     (xl, $distance--xl),
-     (xxl, $distance--xxl)
- );
+$distances: ((xxs, $distance--xxs),
+(xs, $distance--xs),
+(sm, $distance--sm),
+(md, $distance--md),
+(lg, $distance--lg),
+(xl, $distance--xl),
+(xxl, $distance--xxl));
 
 
 
@@ -86,117 +88,111 @@ xl: 112.5rem, //1200px // Extra large screen / wide desktop
 //    #COLORS
 //------------------------------------
 // https://www.colorbox.io/#steps=7#hue_start=80#hue_end=88#hue_curve=easeInQuad#sat_start=4#sat_end=90#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=30#lum_curve=linear#lock_hex=#97c454#minor_steps_map=0
-$green-shades: (
-    0:  hsl(78, 15%, 95%),      // #fbfff2,
-    5:  hsl(80, 30%, 85%),      // #E1F0C4,
-    10: hsl(83, 39%, 75%),      // #C7E29B,
-    20: hsl(84, 49%, 55%),      // #97C454, // CRANE
-    30: hsl(84, 69%, 38%),      // #6FA61E,
-    40: hsl(86, 88%, 28%),      // #528809,
-    50: hsl(86, 94%, 21%),      // #3D6A03,
-    60: hsl(88, 100%, 15%)      // #294D00,
+$green-shades: (0: hsl(78, 15%, 95%), // #fbfff2,
+5: hsl(80, 30%, 85%), // #E1F0C4,
+10: hsl(83, 39%, 75%), // #C7E29B,
+20: hsl(84, 49%, 55%), // #97C454, // CRANE
+30: hsl(84, 69%, 38%), // #6FA61E,
+40: hsl(86, 88%, 28%), // #528809,
+50: hsl(86, 94%, 21%), // #3D6A03,
+60: hsl(88, 100%, 15%) // #294D00,
 );
 
 // https://www.colorbox.io/#steps=7#hue_start=138#hue_end=158#hue_curve=easeInQuad#sat_start=4#sat_end=100#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=17#lum_curve=linear#lock_hex=#189a54#minor_steps_map=0
-$leaf-shades: (
-    0:  hsl(138, 65%, 90%),     // #f2fff6
-    5:  hsl(139, 61%, 84%),     // #bdefcd
-    10: hsl(141, 55%, 71%),     // #8edeaa
-    20: hsl(144, 49%, 49%),     // #40bc71
-    30: hsl(148, 73%, 35%),     // #189a54 // CRANE
-    40: hsl(150, 81%, 25%),     // #0c7541
-    50: hsl(155, 90%, 16%),     // #045030
-    60: hsl(158, 100%, 8%)      // #002b1b
+$leaf-shades: (0: hsl(138, 65%, 90%), // #f2fff6
+5: hsl(139, 61%, 84%), // #bdefcd
+10: hsl(141, 55%, 71%), // #8edeaa
+20: hsl(144, 49%, 49%), // #40bc71
+30: hsl(148, 73%, 35%), // #189a54 // CRANE
+40: hsl(150, 81%, 25%), // #0c7541
+50: hsl(155, 90%, 16%), // #045030
+60: hsl(158, 100%, 8%) // #002b1b
 );
 
 
 // https://www.colorbox.io/#steps=7#hue_start=181#hue_end=201#hue_curve=easeInQuad#sat_start=4#sat_end=100#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=8#lum_curve=linear#lock_hex=#1c292c#minor_steps_map=0
-$blue-navy-shades: (
-    0:  hsl(191, 20%, 92%),     // #f2ffff,
-    5:  hsl(191, 25%, 85%),     // #c8e9e9,
-    10: hsl(191, 30%, 65%),     // #a3d2d3,
-    20: hsl(191, 50%, 45%),     // #5ca8a9,
-    30: hsl(192, 74%, 30%),     // #367c7f,
-    40: hsl(195, 87%, 20%),     // #2d5156,
-    50: hsl(197, 90%, 14%),     // #000d14
-    60: hsl(199, 95%, 10%),     // #000d14
-    70: hsl(191, 22%, 14%)      // #1c292c, // CRANE
+$blue-navy-shades: (0: hsl(191, 20%, 92%), // #f2ffff,
+5: hsl(191, 25%, 85%), // #c8e9e9,
+10: hsl(191, 30%, 65%), // #a3d2d3,
+20: hsl(191, 50%, 45%), // #5ca8a9,
+30: hsl(192, 74%, 30%), // #367c7f,
+40: hsl(195, 87%, 20%), // #2d5156,
+50: hsl(197, 90%, 14%), // #000d14
+60: hsl(199, 95%, 10%), // #000d14
+70: hsl(191, 22%, 14%) // #1c292c, // CRANE
 );
 
 // https://www.colorbox.io/#steps=7#hue_start=60#hue_end=80#hue_curve=easeInQuad#sat_start=4#sat_end=100#sat_curve=easeOutSine#sat_rate=130#lum_start=95#lum_end=14#lum_curve=linear#lock_hex=e5e552#minor_steps_map=0
-$lemon-shades: (
-    0:  hsl(56, 68%, 72%),      // #f2f2e6
-    5:  hsl(58, 72%, 66%),      // #ECEC9A
-    10: hsl(60, 74%, 61%),      // #E5E552 // CRANE
-    20: hsl(62, 85%, 55%),      // #B9BE12
-    30: hsl(64, 88%, 48%),      // #8C9800
-    40: hsl(66, 92%, 44%),      // #607100
-    50: hsl(68, 100%, 40%),     // #384A00
-    60: hsl(70, 100%, 36%)      // #182400
+$lemon-shades: (0: hsl(56, 68%, 72%), // #f2f2e6
+5: hsl(58, 72%, 66%), // #ECEC9A
+10: hsl(60, 74%, 61%), // #E5E552 // CRANE
+20: hsl(62, 85%, 55%), // #B9BE12
+30: hsl(64, 88%, 48%), // #8C9800
+40: hsl(66, 92%, 44%), // #607100
+50: hsl(68, 100%, 40%), // #384A00
+60: hsl(70, 100%, 36%) // #182400
 );
 
 // https://www.colorbox.io/#steps=7#hue_start=60#hue_end=80#hue_curve=easeInQuad#sat_start=4#sat_end=18#sat_curve=easeOutSine#sat_rate=130#lum_start=95#lum_end=5#lum_curve=linear#lock_hex=#f2f9fa#minor_steps_map=0
-$gray-shades: (
-    0:  hsl(148, 3%, 98%),     // #f2f9fa
-    5:  hsl(148, 3%, 88%),     // #d8e6e3
-    10: hsl(148, 3%, 75%),     // #c0d2c9
-    20: hsl(148, 3%, 58%),     // #93aa99
-    30: hsl(148, 3%, 43%),     // #6c836c
-    40: hsl(148, 3%, 28%),     // #4d5b48
-    50: hsl(148, 3%, 15%),     // #2e3428
-    60: hsl(148, 3%, 5%)      // #0c0d0a
+$gray-shades: (0: hsl(148, 3%, 98%), // #f2f9fa
+5: hsl(148, 3%, 88%), // #d8e6e3
+10: hsl(148, 3%, 75%), // #c0d2c9
+20: hsl(148, 3%, 58%), // #93aa99
+30: hsl(148, 3%, 43%), // #6c836c
+40: hsl(148, 3%, 28%), // #4d5b48
+50: hsl(148, 3%, 15%), // #2e3428
+60: hsl(148, 3%, 5%) // #0c0d0a
 );
 
 
-$green-0:   green-shades(0);
-$green-5:   green-shades(5);
-$green-10:  green-shades(10);
-$green-20:  green-shades(20);
-$green-30:  green-shades(30);
-$green-40:  green-shades(40);
-$green-50:  green-shades(50);
-$green-60:  green-shades(60);
+$green-0: green-shades(0);
+$green-5: green-shades(5);
+$green-10: green-shades(10);
+$green-20: green-shades(20);
+$green-30: green-shades(30);
+$green-40: green-shades(40);
+$green-50: green-shades(50);
+$green-60: green-shades(60);
 
-$leaf-0:   leaf-shades(0);
-$leaf-5:   leaf-shades(5);
-$leaf-10:  leaf-shades(10);
-$leaf-20:  leaf-shades(20);
-$leaf-30:  leaf-shades(30);
-$leaf-40:  leaf-shades(40);
-$leaf-50:  leaf-shades(50);
-$leaf-60:  leaf-shades(60);
+$leaf-0: leaf-shades(0);
+$leaf-5: leaf-shades(5);
+$leaf-10: leaf-shades(10);
+$leaf-20: leaf-shades(20);
+$leaf-30: leaf-shades(30);
+$leaf-40: leaf-shades(40);
+$leaf-50: leaf-shades(50);
+$leaf-60: leaf-shades(60);
 
-$blue-navy-0:   blue-navy-shades(0);
-$blue-navy-5:   blue-navy-shades(5);
-$blue-navy-10:  blue-navy-shades(10);
-$blue-navy-20:  blue-navy-shades(20);
-$blue-navy-30:  blue-navy-shades(30);
-$blue-navy-40:  blue-navy-shades(40);
-$blue-navy-50:  blue-navy-shades(50);
-$blue-navy-60:  blue-navy-shades(60);
-$blue-navy-70:  blue-navy-shades(70);
+$blue-navy-0: blue-navy-shades(0);
+$blue-navy-5: blue-navy-shades(5);
+$blue-navy-10: blue-navy-shades(10);
+$blue-navy-20: blue-navy-shades(20);
+$blue-navy-30: blue-navy-shades(30);
+$blue-navy-40: blue-navy-shades(40);
+$blue-navy-50: blue-navy-shades(50);
+$blue-navy-60: blue-navy-shades(60);
+$blue-navy-70: blue-navy-shades(70);
 
-$lemon-0:   lemon-shades(0);
-$lemon-5:   lemon-shades(5);
-$lemon-10:  lemon-shades(10);
-$lemon-20:  lemon-shades(20);
-$lemon-30:  lemon-shades(30);
-$lemon-40:  lemon-shades(40);
-$lemon-50:  lemon-shades(50);
-$lemon-60:  lemon-shades(60);
+$lemon-0: lemon-shades(0);
+$lemon-5: lemon-shades(5);
+$lemon-10: lemon-shades(10);
+$lemon-20: lemon-shades(20);
+$lemon-30: lemon-shades(30);
+$lemon-40: lemon-shades(40);
+$lemon-50: lemon-shades(50);
+$lemon-60: lemon-shades(60);
 
-$gray-0:   gray-shades(0);
-$gray-5:   gray-shades(5);
-$gray-10:  gray-shades(10);
-$gray-20:  gray-shades(20);
-$gray-30:  gray-shades(30);
-$gray-40:  gray-shades(40);
-$gray-50:  gray-shades(50);
-$gray-60:  gray-shades(60);
+$gray-0: gray-shades(0);
+$gray-5: gray-shades(5);
+$gray-10: gray-shades(10);
+$gray-20: gray-shades(20);
+$gray-30: gray-shades(30);
+$gray-40: gray-shades(40);
+$gray-50: gray-shades(50);
+$gray-60: gray-shades(60);
 
 
 $hue: 148;
-
 // grays
 $color-white: hsla(0, 0%, 100%, 1) !default;
 $color-gray--lightest: hsla($hue, 2%, 94%, 1) !default;
@@ -207,7 +203,53 @@ $color-gray--darkest: hsla($hue, 12%, 15%, 1) !default;
 $color-black: hsla($hue, 20%, 4%, 1) !default;
 
 
+$colors: ((blue-navy-0, $blue-navy-0),
+(blue-navy-5, $blue-navy-5),
+(blue-navy-10, $blue-navy-10),
+(blue-navy-20, $blue-navy-20),
+(blue-navy-30, $blue-navy-30),
+(blue-navy-40, $blue-navy-40),
+(blue-navy-50, $blue-navy-50),
+(blue-navy-60, $blue-navy-60),
 
+(green-0, $green-0),
+(green-5, $green-5),
+(green-10, $green-10),
+(green-20, $green-20),
+(green-30, $green-30),
+(green-40, $green-40),
+(green-50, $green-50),
+(green-60, $green-60),
+
+(leaf-0, $leaf-0),
+(leaf-5, $leaf-5),
+(leaf-10, $leaf-10),
+(leaf-20, $leaf-20),
+(leaf-30, $leaf-30),
+(leaf-40, $leaf-40),
+(leaf-50, $leaf-50),
+(leaf-60, $leaf-60),
+
+(lemon-0, $lemon-0),
+(lemon-5, $lemon-5),
+(lemon-10, $lemon-10),
+(lemon-20, $lemon-20),
+(lemon-30, $lemon-30),
+(lemon-40, $lemon-40),
+(lemon-50, $lemon-50),
+(lemon-60, $lemon-60),
+
+(gray-0, $gray-0),
+(gray-5, $gray-5),
+(gray-10, $gray-10),
+(gray-20, $gray-20),
+(gray-30, $gray-30),
+(gray-40, $gray-40),
+(gray-50, $gray-50),
+(gray-60, $gray-60),
+
+(black, $color-black),
+(white, $color-white));
 
 
 //------------------------------------
@@ -237,6 +279,44 @@ $font--title: filson-pro, montserrat, sans-serif;
 
 
 //------------------------------------
+//    #FONT SIZES
+//------------------------------------
+// Basic sizes.
+
+$multiplier: 0.15rem;
+
+$font-size--xxs: 1rem;
+$font-size--xs:  $font-size--xxs + (1 * $multiplier);
+$font-size--sm:  $font-size--xs  + (2 * $multiplier);
+$font-size--md:  $font-size--sm  + (1 * $multiplier);
+$font-size--lg:  $font-size--md  + (1 * $multiplier);
+$font-size--xl:  $font-size--lg  + (1 * $multiplier);
+$font-size--xxl: $font-size--xl  + (2 * $multiplier);
+
+// Very few uses.
+$font-size--super: 3rem;
+$font-size--max: 3.5rem;
+
+
+
+
+
+//------------------------------------
+//    #LETTER SPACING
+//------------------------------------
+$letter-spacing--xxs: -.075em;
+$letter-spacing--xs: -.045em;
+$letter-spacing--sm: -.015em;
+$letter-spacing--md: .015em;
+$letter-spacing--lg: .03em;
+$letter-spacing--xl: .05em;
+$letter-spacing--xxl: .15em;
+
+
+
+
+
+//------------------------------------
 //    #RADIUS
 //------------------------------------
 $radius: 4px;
@@ -251,20 +331,35 @@ $radius--capsule: 99rem;
 //------------------------------------
 //    #SHADOW DEPTH
 //------------------------------------
-$shadow-1: 0 1px 3px rgba($color-black, .07), 0 1px 2px rgba($color-black, .22);
-$shadow-2: 0 3px 6px rgba($color-black, .11), 0 3px 6px rgba($color-black, .21);
-$shadow-3: 0 10px 20px rgba($color-black, .14), 0 6px 6px rgba($color-black, .21);
-$shadow-4: 0 14px 28px rgba($color-black, .20), 0 10px 10px rgba($color-black, .2);
-$shadow-5: 0 19px 38px rgba($color-black, .25), 0 15px 12px rgba($color-black, .2);
+$shadow-1: 0 1px 3px rgba($color-black, .07),
+0 1px 2px rgba($color-black, .22);
+$shadow-2: 0 3px 6px rgba($color-black, .11),
+0 3px 6px rgba($color-black, .21);
+$shadow-3: 0 10px 20px rgba($color-black, .14),
+0 6px 6px rgba($color-black, .21);
+$shadow-4: 0 14px 28px rgba($color-black, .20),
+0 10px 10px rgba($color-black, .2);
+$shadow-5: 0 19px 38px rgba($color-black, .25),
+0 15px 12px rgba($color-black, .2);
 
-$shadow-h-1: 1px 0 3px rgba($color-black, .07), 1px 0 2px rgba($color-black, .22);
-$shadow-h-2: 3px 0 6px rgba($color-black, .11), 3px 0 6px rgba($color-black, .21);
-$shadow-h-3: 10px 0 20px rgba($color-black, .14), 06px 0 6px rgba($color-black, .21);
-$shadow-h-4: 14px 0 28px rgba($color-black, .20), 10px 0 10px rgba($color-black, .2);
-$shadow-h-5: 19px 0 38px rgba($color-black, .25), 15px 0 12px rgba($color-black, .2);
+$shadow-h-1: 1px 0 3px rgba($color-black, .07),
+1px 0 2px rgba($color-black, .22);
+$shadow-h-2: 3px 0 6px rgba($color-black, .11),
+3px 0 6px rgba($color-black, .21);
+$shadow-h-3: 10px 0 20px rgba($color-black, .14),
+06px 0 6px rgba($color-black, .21);
+$shadow-h-4: 14px 0 28px rgba($color-black, .20),
+10px 0 10px rgba($color-black, .2);
+$shadow-h-5: 19px 0 38px rgba($color-black, .25),
+15px 0 12px rgba($color-black, .2);
 
-$shadow-i-1: inset 0 1px 3px rgba($color-black, .07), inset 0 1px 2px rgba($color-black, .22);
-$shadow-i-2: inset 0 3px 6px rgba($color-black, .11), inset 0 3px 6px rgba($color-black, .21);
-$shadow-i-3: inset 0 10px 20px rgba($color-black, .14), inset 0 6px 6px rgba($color-black, .21);
-$shadow-i-4: inset 0 14px 28px rgba($color-black, .20), inset 0 10px 10px rgba($color-black, .2);
-$shadow-i-5: inset 0 19px 38px rgba($color-black, .25), inset 0 15px 12px rgba($color-black, .2);
+$shadow-i-1: inset 0 1px 3px rgba($color-black, .07),
+inset 0 1px 2px rgba($color-black, .22);
+$shadow-i-2: inset 0 3px 6px rgba($color-black, .11),
+inset 0 3px 6px rgba($color-black, .21);
+$shadow-i-3: inset 0 10px 20px rgba($color-black, .14),
+inset 0 6px 6px rgba($color-black, .21);
+$shadow-i-4: inset 0 14px 28px rgba($color-black, .20),
+inset 0 10px 10px rgba($color-black, .2);
+$shadow-i-5: inset 0 19px 38px rgba($color-black, .25),
+inset 0 15px 12px rgba($color-black, .2);

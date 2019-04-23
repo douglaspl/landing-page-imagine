@@ -55,8 +55,9 @@ gulp.task('styles', function () {
             './src/styles/block/**/*.scss',
 
             // Trumps
-            // './src/styles/utils/colors.scss',
-            './src/styles/utils/trumps.scss'
+            './src/styles/utils/colors.scss',
+            './src/styles/utils/trumps.scss',
+            './src/styles/utils/typography.scss'
         ])
         .pipe(sassLint({
             rules: {
@@ -105,8 +106,9 @@ gulp.task('styles-prod', function () {
             './src/styles/block/**/*.scss',
 
             // Trumps
-            // './src/styles/utils/colors.scss',
-            './src/styles/utils/trumps.scss'
+            './src/styles/utils/colors.scss',
+            './src/styles/utils/trumps.scss',
+            './src/styles/utils/typography.scss'
         ])
         .pipe(concat('styles.scss'))
         .pipe(sass().on('error', sass.logError))

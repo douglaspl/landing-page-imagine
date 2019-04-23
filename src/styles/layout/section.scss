@@ -21,7 +21,7 @@
         background-color: $color-white;
         color: $color-gray--dark;
 
-        [class*='__title'] {
+        [class*='section__title'] {
             color: $color-black;
         }
 
@@ -31,7 +31,7 @@
         background-color: $color-gray--lightest;
         color: $color-gray--dark;
 
-        [class*='__title'] {
+        [class*='section__title'] {
             color: $color-black;
         }
 
@@ -41,7 +41,7 @@
         background-color: $color-gray--darkest;
         color: $color-gray--lightest;
 
-        [class*='__title'] {
+        [class*='section__title'] {
             color: $color-white;
         }
 
@@ -51,7 +51,7 @@
         background-color: $green-40;
         color: $color-gray--lightest;
 
-        [class*='__title'] {
+        [class*='section__title'] {
             color: $color-white;
         }
 
