@@ -11,12 +11,6 @@ $sanitize: false;
 
 
 
-$header-height: 9.25rem;
-
-
-
-
-
 //------------------------------------
 //    #BREAKPOINTS
 //------------------------------------
@@ -54,11 +48,11 @@ xl: 112.5rem, //1200px // Extra large screen / wide desktop
  // Não mexer.
  $directions: 'top', 'right', 'bottom', 'left';
  $perpendiculars: 'v', 'h';
- 
- 
- 
- 
- 
+
+
+
+
+
  //------------------------------------
  //    #DISTANCES
  //------------------------------------
@@ -70,10 +64,10 @@ xl: 112.5rem, //1200px // Extra large screen / wide desktop
  $distance--xl: 2.5rem;
  $distance--xxl: 3.5rem;
  $distance--xxxl: 5rem;
- 
+
  $distance--super: 6rem;
  $distance--max: 8rem;
- 
+
  $distances: (
      (xxs, $distance--xxs),
      (xs, $distance--xs),

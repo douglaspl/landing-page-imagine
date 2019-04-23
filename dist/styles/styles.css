@@ -927,10 +927,6 @@ button:focus {
 .header {
   background-color: #189a55;
   color: #cfd3d1;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
   z-index: 300; }
   .header__container {
     align-items: center;
@@ -988,7 +984,6 @@ button:focus {
   background-repeat: repeat;
   background-size: auto;
   color: #1c292c;
-  padding-top: 9.25rem;
   position: relative; }
   @media (min-width: 56.35rem) {
     .hero {
