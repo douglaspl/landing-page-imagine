@@ -927,6 +927,9 @@ button:focus {
 
 .header {
   background-color: #189a55;
+  background-image: url(images/leaf-1.png), url(images/leaf-2.png), url(images/leaf-3.png);
+  background-position: center center, center center, center center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   color: #cfd3d1;
   z-index: 300; }
   .header__container {
