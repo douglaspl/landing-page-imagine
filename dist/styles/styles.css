@@ -1118,6 +1118,12 @@ button:focus {
     color: #eff0f0; }
     .section--bg-primary [class*='section__title'] {
       color: white; }
+  .section--theme {
+    background-color: #189a55;
+    background-image: url("../images/img__tema.png");
+    background-position: center center;
+    background-size: cover;
+    min-height: 620px; }
 
 .btn {
   border-radius: 99px;
