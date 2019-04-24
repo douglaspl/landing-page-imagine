@@ -1,12 +1,23 @@
 .calendar {
     $this: &;
 
-    background-image:    url('../images/img__'),
-                         url('../images/');
+    background-color: $color-white;
+
+    background-image:   url('../images/img__calendario.png'),
+                        url('../images/img__camera.png'),
+                        linear-gradient(135deg, $color-white 0, $color-white 70%,  $lemon-10 95%);
+
     background-position: left top,
-                         right top;
+                         right top,
+                         center left;
+
     background-repeat:   no-repeat,
+                         no-repeat,
                          no-repeat;
+    background-size: 60%, 45%, auto;
+    height: 100vh;
+    padding-left: 50%;
+    padding-top: 40vh;
 
     p {
         background-color: $color-white;

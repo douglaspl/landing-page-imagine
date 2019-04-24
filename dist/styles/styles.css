@@ -988,10 +988,10 @@ button:focus {
         margin-top: 2rem; } }
 
 .hero {
-  background-color: #294d00;
+  background-color: white;
   background-image: linear-gradient(-45deg, white 0, white 70%, #e5e552 95%);
   background-position: center left;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: auto;
   color: #1c292c;
   position: relative; }
@@ -1161,9 +1161,14 @@ button:focus {
     font-size: .825rem; }
 
 .calendar {
-  background-image: url("../images/"), url("../images/");
-  background-position: left top, right top;
-  background-repeat: no-repeat, no-repeat; }
+  background-color: white;
+  background-image: url("../images/img__calendario.png"), url("../images/img__camera.png"), linear-gradient(135deg, white 0, white 70%, #e5e552 95%);
+  background-position: left top, right top, center left;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 60%, 45%, auto;
+  height: 100vh;
+  padding-left: 50%;
+  padding-top: 40vh; }
   .calendar p {
     background-color: white; }
 
