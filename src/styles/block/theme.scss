@@ -1,0 +1,18 @@
+.theme {
+    color: $blue-navy-70;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+
+    &__title {
+        color: $color-white;
+        display: block;
+        font-size: 2em;
+        font-weight: 900;
+        margin-bottom: $distance--lg;
+    }
+
+}
