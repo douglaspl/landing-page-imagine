@@ -1100,12 +1100,12 @@ button:focus {
         margin-bottom: 3rem; } }
   .section--bg-white {
     background-color: white;
-    color: #45544c; }
+    color: #1c292c; }
     .section--bg-white [class*='section__title'] {
       color: #080c0a; }
   .section--bg-gray {
     background-color: #eff0f0;
-    color: #45544c; }
+    color: #1c292c; }
     .section--bg-gray [class*='section__title'] {
       color: #080c0a; }
   .section--bg-gray--darkest {
@@ -1175,6 +1175,9 @@ button:focus {
     font-weight: 900;
     margin-bottom: 2rem;
     margin-top: 0.75rem; }
+  .calendar__date {
+    color: #189a55;
+    font-size: 1.5em; }
 
 .capsule {
   background-color: #eff0f0;
