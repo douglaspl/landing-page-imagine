@@ -979,7 +979,8 @@ button:focus {
     flex-direction: row; }
     .header__logo > img {
       margin-right: 2rem;
-      width: 100%; }
+      height: 95px;
+      width: auto; }
   .header__cta {
     margin-top: 2rem; }
     @media (min-width: 56.35rem) {
@@ -1314,6 +1315,10 @@ button:focus {
     font-size: 2em;
     font-weight: 900;
     margin-bottom: 2rem; }
+  .theme img {
+    height: 120px;
+    margin: 0 auto;
+    width: auto; }
 
 .bg-blue-navy-0 {
   background-color: #e7edef; }
