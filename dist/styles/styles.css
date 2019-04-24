@@ -1123,7 +1123,8 @@ button:focus {
     background-image: url("../images/img__tema.png");
     background-position: center center;
     background-size: cover;
-    min-height: 620px; }
+    min-height: 620px;
+    text-align: center; }
 
 .btn {
   border-radius: 99px;
@@ -1301,6 +1302,18 @@ button:focus {
 .quote__author {
   font-style: normal;
   font-weight: bold; }
+
+.theme {
+  color: #1c292c; }
+  .theme__container {
+    margin: 0 auto;
+    max-width: 70%; }
+  .theme__title {
+    color: white;
+    display: block;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 2rem; }
 
 .bg-blue-navy-0 {
   background-color: #e7edef; }
