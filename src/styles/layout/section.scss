@@ -57,4 +57,11 @@
 
     }
 
+    &--theme {
+        background-color: $leaf-30;
+        background-image: url('../images/img__tema.png');
+        background-position: center center;
+        background-size: cover;
+        min-height: 620px;
+    }
 }
