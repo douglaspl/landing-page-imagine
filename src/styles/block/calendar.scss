@@ -1,4 +1,15 @@
 .calendar {
     $this: &;
 
+    background-image:    url('../images/'),
+                         url('../images/');
+    background-position: left top,
+                         right top;
+    background-repeat:   no-repeat,
+                         no-repeat;
+
+    p {
+        background-color: $color-white;
+    }
+
 }

@@ -1160,6 +1160,13 @@ button:focus {
   .btn--sm {
     font-size: .825rem; }
 
+.calendar {
+  background-image: url("../images/"), url("../images/");
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat; }
+  .calendar p {
+    background-color: white; }
+
 .capsule {
   background-color: #eff0f0;
   border-radius: 99rem;
