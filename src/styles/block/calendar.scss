@@ -16,11 +16,17 @@
                          no-repeat;
     background-size: 60%, 45%, auto;
     height: 100vh;
-    padding-left: 50%;
-    padding-top: 40vh;
+    padding: 400px 30% 0 50%;
 
     p {
         background-color: $color-white;
+        padding: $distance--sm;
+    }
+
+    &__call {
+        font-weight: 900;
+        margin-bottom: $distance--lg;
+        margin-top: $distance--sm;
     }
 
 }
