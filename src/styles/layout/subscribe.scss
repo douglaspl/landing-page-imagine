@@ -1,5 +1,12 @@
 .subscribe {
     $this: &;
 
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        margin-bottom: $distance--lg;
+    }
 
 }
