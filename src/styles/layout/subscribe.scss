@@ -9,4 +9,23 @@
         margin-bottom: $distance--lg;
     }
 
+    &__multicol {
+        display: flex;
+        flex-direction: column;
+
+        @include media('>md') {
+            flex-direction: row;
+
+            > *:last-child {
+                flex: 1;
+            }
+
+        }
+
+    }
+
+    &__presentation {
+        min-height: 10rem;
+    }
+
 }
