@@ -136,20 +136,46 @@
             </div>
         </section>
 
-        <section id='formContainer' class="main__section section section--bg-primary">
-            <h2 id="form" class="section__title text--center">Depoimentos sobre o Prêmio IMAGINE</h2>
+        <form class="main__section section section--subscribe">
+            <fieldset>
+              <legend id="form" class="section__title text--center">Cadastre-se</legend>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
 
-            <blockquote class="container quote">
-                <p class="quote__citation">Winter is coming. You all should get prepared. Learn new skills. Soft skills.<br>A sword won't save your life, but resilience will.</p>
-                <figure>
-                    <div class="quote__avatar avatar">
-                        <img src="https://www.totallytimelines.com/wp-content/uploads/2016/07/EddardStark.jpg">
+                <div class="form-group">
+                    <label for="school">Escola:</label>
+                    <input type="text" id="school" name="user_name">
+                </div>
+
+                <div>
+                    <div class="form-group">
+                        <label for="grade">Série:</label>
+                        <select id="card" name="grade">
+                            <option value="nona">9º</option>
+                            <option value="ensino-medio">Ensino Médio</option>
+                        </select>
                     </div>
-                    <figcaption class="quote__author">Ned Stark</figcaption>
-                </figure>
-            </blockquote>
 
-        </section>
+                    <div class="form-group">
+                        <input type="radio" name="material" id="script" value="roteiro">
+                        <label for="script">Roteiro</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" name="material" id="video" value="video">
+                        <label for="video">Video</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teacher">Professor orientador:</label>
+                        <input type="text" id="teacher" name="teacher">
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
 
     </main>
 
