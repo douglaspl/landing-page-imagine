@@ -7,10 +7,31 @@ function toggleNav() {
 //scroll
 
 var element = document.getElementById("form");
-var botao = document.getElementById("button");
+var botoes = document.querySelectorAll(".btn");
 
-botao.addEventListener('click', scrollToForm);
+   
+    for (i = 0; i < botoes.length; i++){
+       
+        botoes[i].addEventListener('click', scrollToForm);
+    
+    };
+
+// ----- EXCEÇÃO PARA BOTÃO DO REGULAMENTO INÍCIO
+var btnRegulamento = document.getElementById("regulamento");
+
+// Retira clique do botão de regulamento
+btnRegulamento.removeEventListener('click', scrollToForm);
+// Adiciona novo clique para nova função
+btnRegulamento.addEventListener('click', openRules);
+// ----- EXCEÇÃO PARA BOTÃO DO REGULAMENTO FIM
+
+
+// FUNÇÕES
 
 function scrollToForm() {
     element.scrollIntoView({ behavior: "smooth"});
+};
+
+function openRules() {
+    console.log('Aguardando video de exemplo que virá aqui')
 };
