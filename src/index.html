@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.3.92/css/materialdesignicons.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
 
-   
+
 
 </head>
 <body>
@@ -136,47 +136,48 @@
             </div>
         </section>
 
-        <form class="main__section section section--subscribe">
-            <fieldset>
-              <legend id="form" class="section__title text--center">Cadastre-se</legend>
-                <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="user_name">
-                </div>
-
-                <div class="form-group">
-                    <label for="school">Escola:</label>
-                    <input type="text" id="school" name="user_name">
-                </div>
-
-                <div>
+        <div class="main__section section section--bg-white section--subscribe">
+            <form>
+                <fieldset>
+                <legend id="form" class="section__title text--center">Cadastre-se</legend>
                     <div class="form-group">
-                        <label for="grade">Série:</label>
-                        <select id="card" name="grade">
-                            <option value="nona">9º</option>
-                            <option value="ensino-medio">Ensino Médio</option>
-                        </select>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="user_name">
                     </div>
 
                     <div class="form-group">
-                        <input type="radio" name="material" id="script" value="roteiro">
-                        <label for="script">Roteiro</label>
+                        <label for="school">Escola:</label>
+                        <input type="text" id="school" name="user_name">
                     </div>
 
-                    <div class="form-group">
-                        <input type="radio" name="material" id="video" value="video">
-                        <label for="video">Video</label>
+                    <div>
+                        <div class="form-group">
+                            <label for="grade">Série:</label>
+                            <select id="card" name="grade">
+                                <option value="nona">9º</option>
+                                <option value="ensino-medio">Ensino Médio</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" name="material" id="script" value="roteiro">
+                            <label for="script">Roteiro</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" name="material" id="video" value="video">
+                            <label for="video">Video</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teacher">Professor orientador:</label>
+                            <input type="text" id="teacher" name="teacher">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="teacher">Professor orientador:</label>
-                        <input type="text" id="teacher" name="teacher">
-                    </div>
-                </div>
-
-            </fieldset>
-        </form>
-
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer class="section section--bg-gray--darkest">
