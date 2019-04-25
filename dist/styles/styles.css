@@ -1139,6 +1139,7 @@ button:focus {
   border-radius: 99px;
   border: 1px solid transparent;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0);
+  cursor: pointer;
   display: inline-block;
   font-size: 1rem;
   font-weight: 700;
@@ -1206,6 +1207,27 @@ button:focus {
   .capsule--primary-darkest {
     background-color: #294d00;
     color: white; }
+
+.form-group {
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  max-width: 100%; }
+  @media (min-width: 37.6rem) {
+    .form-group {
+      align-items: center;
+      flex-direction: row; } }
+  .form-group__label {
+    margin-bottom: 0.5rem;
+    min-width: 5rem; }
+    @media (min-width: 37.6rem) {
+      .form-group__label {
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+        min-width: 4rem; } }
+  .form-group__input {
+    flex: 1;
+    -webkit-appearance: none; }
 
 .imgtext > * {
   justify-content: center; }
