@@ -47,6 +47,23 @@
         color: $color-white;
     }
 
+    &--text {
+        background-color: transparent;
+        box-shadow: none;
+        color: $color-gray--darkest;
+        // opacity: .75;
+        padding: 0;
+        text-shadow: none;
+
+        @include hover {
+            background-color: transparent;
+            box-shadow: none;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    }
+
     &--xs { font-size: .75rem; }
     &--sm { font-size: .825rem; }
 
