@@ -137,10 +137,10 @@
         </section>
 
         <div class="main__section section section--bg-white section--subscribe">
-            <h2 class="section__title text--center">Cadastre-se</h2>
+            <h2 class="section__title text--center" id="form">Cadastre-se</h2>
             <form class="container">
                 <fieldset class="subscribe">
-                    <legend id="form" class="sr-only">Cadastre-se</legend>
+                    <legend class="sr-only">Cadastre-se</legend>
 
                     <div class="form-group form-group--full-width">
                         <label class="form-group__label" for="name">Nome</label>
@@ -161,14 +161,14 @@
                             </select>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group m-right--sm">
                             <input type="radio" name="material" id="script" value="roteiro">
-                            <label class="form-group__label" for="script">Roteiro</label>
+                            <label class="form-group__label m-left--xs" for="script">Roteiro</label>
                         </div>
 
                         <div class="form-group m-right--lg">
                             <input type="radio" name="material" id="video" value="video">
-                            <label class="form-group__label" for="video">Video</label>
+                            <label class="form-group__label m-left--xs" for="video">Video</label>
                         </div>
 
                         <div class="form-group" flex="1">
@@ -177,15 +177,15 @@
                         </div>
                     </div>
 
-                    <div class="form-group form-group--full-width">
-                        <label class="form-group__label" for="presentation">Professor orientador</label>
+                    <div class="form-group form-group--full-width align-items--start">
+                        <label class="form-group__label m-top--sm" for="presentation">Apresentação do Projeto</label>
                         <textarea class="form-group__input subscribe__presentation" type="text" id="presentation" name="teacher"></textarea>
                     </div>
                 </fieldset>
 
                 <div class="text--right">
-                    <span>nome-do-arquivo.mpeg</span>
-                    <button class="btn btn--primary">Upload do arquivo</button>
+                    <span class="m-right--sm">nome-do-arquivo.mpeg</span>
+                    <button class="btn btn--primary m-right--sm">Upload do arquivo</button>
                     <button class="btn btn--primary">Enviar</button>
                 </div>
             </form>
