@@ -163,45 +163,57 @@
         </section>
 
         <div class="main__section section section--bg-white section--subscribe">
-            <form>
-                <fieldset>
-                    <legend id="form" class="section__title text--center">Cadastre-se</legend>
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="user_name">
+            <h2 class="section__title text--center" id="form">Cadastre-se</h2>
+            <form class="container">
+                <fieldset class="subscribe">
+                    <legend class="sr-only">Cadastre-se</legend>
+
+                    <div class="form-group form-group--full-width">
+                        <label class="form-group__label" for="name">Nome</label>
+                        <input class="form-group__input" type="text" id="name" name="user_name">
                     </div>
 
-                    <div class="form-group">
-                        <label for="school">Escola:</label>
-                        <input type="text" id="school" name="user_name">
+                    <div class="form-group form-group--full-width">
+                        <label class="form-group__label" for="school">Escola</label>
+                        <input class="form-group__input" type="text" id="school" name="user_name">
                     </div>
 
-                    <div>
-                        <div class="form-group">
-                            <label for="grade">Série:</label>
-                            <select id="card" name="grade">
+                    <div class="subscribe__multicol">
+                        <div class="form-group m-right--lg">
+                            <label class="form-group__label" for="grade">Série</label>
+                            <select class="form-group__input" id="card" name="grade">
                                 <option value="nona">9º</option>
                                 <option value="ensino-medio">Ensino Médio</option>
                             </select>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group m-right--sm">
                             <input type="radio" name="material" id="script" value="roteiro">
-                            <label for="script">Roteiro</label>
+                            <label class="form-group__label m-left--xs" for="script">Roteiro</label>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group m-right--lg">
                             <input type="radio" name="material" id="video" value="video">
-                            <label for="video">Video</label>
+                            <label class="form-group__label m-left--xs" for="video">Video</label>
                         </div>
 
-                        <div class="form-group">
-                            <label for="teacher">Professor orientador:</label>
-                            <input type="text" id="teacher" name="teacher">
+                        <div class="form-group" flex="1">
+                            <label class="form-group__label" for="teacher">Professor orientador</label>
+                            <input class="form-group__input" type="text" id="teacher" name="teacher">
                         </div>
                     </div>
 
+                    <div class="form-group form-group--full-width align-items--start">
+                        <label class="form-group__label m-top--sm" for="presentation">Apresentação do Projeto</label>
+                        <textarea class="form-group__input subscribe__presentation" type="text" id="presentation" name="teacher"></textarea>
+                    </div>
                 </fieldset>
+
+                <div class="text--right">
+                    <span class="m-right--sm">nome-do-arquivo.mpeg</span>
+                    <button class="btn btn--primary m-right--sm">Upload do arquivo</button>
+                    <button class="btn btn--primary">Enviar</button>
+                </div>
             </form>
         </div>
     </main>

@@ -1,3 +1,7 @@
+.align-items--start {
+    align-items: flex-start;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -30,6 +34,10 @@
 
 .text--center {
     text-align: center;
+}
+
+.text--right {
+    text-align: right;
 }
 
 .sr-only {
