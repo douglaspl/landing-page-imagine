@@ -1124,8 +1124,16 @@ button:focus {
     background-image: url("../images/img__tema.png");
     background-position: center center;
     background-size: cover;
-    min-height: 620px;
+    min-height: 500px;
     text-align: center; }
+  .section--subscribe {
+    background-color: white;
+    background-image: linear-gradient(-135deg, white 0, white 70%, #e5e552 95%);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #1c292c;
+    position: relative; }
 
 .btn {
   border-radius: 99px;
@@ -1305,20 +1313,24 @@ button:focus {
   font-weight: bold; }
 
 .theme {
-  color: #1c292c; }
+  align-items: center;
+  color: #1c292c;
+  display: flex;
+  justify-content: center; }
   .theme__container {
-    margin: 0 auto;
-    max-width: 70%; }
+    max-width: 60%; }
+  .theme img {
+    height: 120px;
+    margin: 0 auto 2rem;
+    width: auto; }
+  .theme p {
+    font-size: 1.25rem; }
   .theme__title {
     color: white;
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
     margin-bottom: 2rem; }
-  .theme img {
-    height: 120px;
-    margin: 0 auto;
-    width: auto; }
 
 .bg-blue-navy-0 {
   background-color: #e7edef; }

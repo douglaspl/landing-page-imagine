@@ -1,0 +1,38 @@
+.form {
+    &-group {
+        $this: &;
+
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        max-width: 100%;
+
+        @include media('>sm') {
+            align-items: center;
+            flex-direction: row;
+        }
+
+        &__label {
+            margin-bottom: $distance--xs;
+            min-width: 5rem;
+
+            @include media('>sm') {
+                margin-bottom: 0;
+                margin-right: $distance--sm;
+                min-width: 4rem;
+            }
+        }
+
+        &__input {
+            flex: 1;
+            -webkit-appearance: none;
+
+            @include target-ie {
+                flex-basis: auto;
+            }
+
+        }
+
+    }
+
+}
