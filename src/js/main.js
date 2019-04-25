@@ -7,9 +7,17 @@ function toggleNav() {
 //scroll
 
 var element = document.getElementById("form");
-var botao = document.getElementById("button");
+var botoes = document.querySelectorAll(".btn");
 
-botao.addEventListener('click', scrollToForm);
+
+   
+    for (i = 0; i < botoes.length; i++){
+       
+        botoes[i].addEventListener('click', scrollToForm);
+    
+    };
+
+
 
 function scrollToForm() {
     element.scrollIntoView({ behavior: "smooth"});
