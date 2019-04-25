@@ -9,7 +9,6 @@ function toggleNav() {
 var element = document.getElementById("form");
 var botoes = document.querySelectorAll(".btn");
 
-
    
     for (i = 0; i < botoes.length; i++){
        
@@ -17,8 +16,22 @@ var botoes = document.querySelectorAll(".btn");
     
     };
 
+// ----- EXCEÇÃO PARA BOTÃO DO REGULAMENTO INÍCIO
+var btnRegulamento = document.getElementById("regulamento");
 
+// Retira clique do botão de regulamento
+btnRegulamento.removeEventListener('click', scrollToForm);
+// Adiciona novo clique para nova função
+btnRegulamento.addEventListener('click', openRules);
+// ----- EXCEÇÃO PARA BOTÃO DO REGULAMENTO FIM
+
+
+// FUNÇÕES
 
 function scrollToForm() {
     element.scrollIntoView({ behavior: "smooth"});
+};
+
+function openRules() {
+    console.log('Aguardando video de exemplo que virá aqui')
 };
