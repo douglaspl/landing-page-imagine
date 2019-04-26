@@ -35,7 +35,7 @@
     }
 
     &__link {
-        font-size: .75em;
-        margin-top: $distance--xxs;
+        display: block;
+        margin-top: $distance--sm;
     }
 }

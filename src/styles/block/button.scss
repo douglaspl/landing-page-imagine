@@ -54,6 +54,7 @@
         // opacity: .75;
         padding: 0;
         text-shadow: none;
+        white-space: normal;
 
         &:hover {
             background-color: transparent;
@@ -64,6 +65,7 @@
 
     }
 
+    &--xxs { font-size: .6rem; }
     &--xs { font-size: .75rem; }
     &--sm { font-size: .825rem; }
 
