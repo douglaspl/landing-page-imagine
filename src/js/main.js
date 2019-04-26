@@ -33,7 +33,8 @@ function scrollToForm() {
 };
 
 function openRules() {
-    console.log('Aguardando video de exemplo que virá aqui')
+  alert('Aguardando pdf que virá aqui');  
+  console.log('Aguardando pdf que virá aqui');
 };
 // ----- FUNÇÕES FIM
 
