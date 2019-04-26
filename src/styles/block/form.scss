@@ -29,19 +29,41 @@
         }
 
         &__input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
             border: 1px solid $leaf-30;
             border-radius: 30px;
             outline: 0 solid transparent;
             flex: 1;
             padding: .5em 1em;
-            // -webkit-appearance: none;
 
             &:focus {
                 background-color: transparentize($lemon-20, .8);
             }
 
+            &--select {
+                padding-right: 3em;
+            }
+
         }
 
+        
+        
+    }
+
+    &__select-wrapper {
+        display: inline-flex;
+        position: relative;
+    }
+
+    &__select-arrow {
+        pointer-events: none;
+        position: absolute;
+        right: .75em;
+        top: 50%;
+        transform: translateY(-.65em); // (form height / 2) + (icon height /2)
+        z-index: 2;
     }
 
 }

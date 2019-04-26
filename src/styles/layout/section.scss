@@ -74,6 +74,12 @@
         background-size: auto;
         color: $blue-navy-70;
         position: relative;
+
+        > .container {
+            max-width: 960px;
+            width: 98%;
+        }
+
     }
 
 }
