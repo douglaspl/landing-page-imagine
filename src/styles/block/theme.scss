@@ -23,7 +23,14 @@
         display: block;
         font-size: 1.5em;
         font-weight: 900;
+        line-height: 1;
         margin-bottom: $distance--lg;
+        margin-top: $distance--lg;
+
+        @include media('>sm') {
+            margin-top: 0;
+        }
+
     }
 
 }

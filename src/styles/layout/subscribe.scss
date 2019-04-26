@@ -6,7 +6,7 @@
     flex-direction: column;
 
     > * {
-        margin-bottom: $distance--lg;
+        margin-bottom: $distance--xl;
     }
 
     &__multicol {
@@ -14,11 +14,11 @@
         flex-direction: column;
 
         > *:nth-child(2) {
-            margin-top: $distance--lg;
+            margin-top: $distance--xl;
         }
 
         > *:nth-child(3) {
-            margin-bottom: $distance--lg;
+            margin-bottom: $distance--xl;
         }
 
         @include media('>sm') {
@@ -46,7 +46,7 @@
 
             > *:nth-child(4) {
                 flex: 1;
-                margin-top: $distance--lg;
+                margin-top: $distance--xl;
             }
 
         }

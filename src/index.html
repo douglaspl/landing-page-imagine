@@ -167,12 +167,14 @@
                         <label class="form-group__label" for="name">Nome</label>
                         <input class="form-group__input form-group__input--error" type="text" id="name" name="user_name">
                         <span class="form-group__error">Esse campo não pode ficar vazio.</span>
+                        <span class="form-group__error">Há erro no nome inserido. Caracteres especiais, talvez?</span>
                     </div>
 
                     <div class="form-group form-group--full-width">
                         <label class="form-group__label" for="school">Escola</label>
                         <input class="form-group__input form-group__input--error" type="text" id="school" name="user_name">
                         <span class="form-group__error">Esse campo não pode ficar vazio.</span>
+                        <span class="form-group__error">Parece que esse é um nome de escola inválido.</span>
                     </div>
 
                     <div class="subscribe__multicol">
@@ -192,25 +194,27 @@
                         </div>
 
                         <div class="form-group form-group--check-radio">
-                            <input type="radio" name="material" id="script" value="roteiro">
-                            <label class="form-group__label m-left--xs" for="script">Roteiro</label>
+                            <input type="radio" name="material" id="video" value="video" aria-checked="true" checked>
+                            <label class="form-group__label m-left--xs" for="video">Video</label>
                         </div>
 
                         <div class="form-group form-group--check-radio">
-                            <input type="radio" name="material" id="video" value="video">
-                            <label class="form-group__label m-left--xs" for="video">Video</label>
+                            <input type="radio" name="material" id="script" value="roteiro">
+                            <label class="form-group__label m-left--xs" for="script">Roteiro</label>
                         </div>
 
                         <div class="form-group" flex="1">
                             <label class="form-group__label" for="teacher">Professor orientador</label>
                             <input class="form-group__input form-group__input--error" type="text" id="teacher" name="teacher">
                             <span class="form-group__error">Esse campo não pode ficar vazio.</span>
+                            <span class="form-group__error">Há erro no nome inserido. Caracteres especiais, talvez?</span>
                         </div>
                     </div>
 
                     <div class="form-group form-group--full-width align-items--start">
                         <label class="form-group__label m-top--sm" for="presentation">Apresentação do Projeto</label>
                         <textarea class="form-group__input subscribe__presentation w100" type="text" id="presentation" name="teacher"></textarea>
+                        <span class="form-group__error">Esse campo não pode ficar vazio.</span>
                     </div>
                 </fieldset>
 
