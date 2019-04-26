@@ -1,19 +1,13 @@
-.arrow {
-    $size: 1rem;
+.icon {
+    $size: 1.5rem;
 
     height: $size;
     width: $size;
-
-    &--down {
+    
+    &--rotate90 {
         transform: rotate(90deg);
     }
-
-    &--lg {
-        $size: 1.5rem;
-
-        height: $size;
-        width: $size;
-    }
+    
 }
 
 .align-items--start {
