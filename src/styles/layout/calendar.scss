@@ -1,0 +1,27 @@
+.calendar {
+    $this: &;
+
+    p {
+        background-color: $color-white;
+        font-family: filson-pro, sans-serif;
+        font-size: 1.5rem;
+        padding: $distance--sm;
+        
+        @include media('>xl') {
+            font-size: 2rem;
+        }
+
+    }
+
+    &__call {
+        font-weight: 900;
+        margin-bottom: $distance--lg;
+        margin-top: $distance--sm;
+    }
+
+    &__date {
+        color: $leaf-30;
+        font-size: 1.15em;
+    }
+
+}

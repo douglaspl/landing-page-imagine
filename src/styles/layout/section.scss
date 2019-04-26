@@ -57,6 +57,75 @@
 
     }
 
+    &--calendar {
+        background-color: $color-white;
+
+        background-image:   url('../images/img__calendario.png'),
+                            url('../images/img__camera.png'),
+                            linear-gradient(-135deg, $color-white 0, $color-white 70%,  $lemon-10 95%);
+
+        background-position: center top,
+                            400% 90%,
+                            center left;
+
+        background-repeat:   no-repeat,
+                            no-repeat,
+                            no-repeat;
+        background-size: 100%, 90%, auto;
+        min-height: 90vh;
+        padding: 30vh $distance--lg 0;
+        text-align: center;
+
+        > p {
+            text-align: left;
+        }
+
+        @include media('>sm') {
+            background-image:       url('../images/img__calendario.png'),
+                                    url('../images/img__camera.png'),
+                                    linear-gradient(-160deg, $color-white 0, $color-white 80%,  $lemon-10 95%);
+            background-position:    center top,
+                                    150% 95%,
+                                    center left;
+            background-size: 100%, 70%, auto;
+
+            padding: 42vh 45vw 15vh 10vw;
+            text-align: left;
+        }
+
+        @include media('>md') {
+            background-image:   url('../images/img__calendario.png'),
+                                url('../images/img__camera.png'),
+                                linear-gradient(135deg, $color-white 0, $color-white 70%,  $lemon-10 95%);
+            background-position: -200% top,
+                                 right top,
+                                 center left;
+            background-size: 90%, 45%, auto;
+            padding: 40vh 10vw 15vh 60vw;
+        }
+
+        @include media('>lg') {
+            background-position: left top,
+                                 right top,
+                                 center left;
+            background-size: 60%, 45%, auto;
+            padding: 40vh 20vw 15vh 50vw;
+        }
+
+        @include media('>xl') {           
+            background-position:    left top,
+                                    right top,
+                                    center left;
+
+            background-size:        60%,
+                                    35%,
+                                    auto;
+            padding: 40vh 29vw 0 45vw;
+            height: 100vh;
+        }
+        
+    }
+
     &--theme {
         background-color: $leaf-30;
         background-image: url('../images/img__tema.png');
