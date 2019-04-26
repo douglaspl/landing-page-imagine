@@ -165,12 +165,14 @@
 
                     <div class="form-group form-group--full-width">
                         <label class="form-group__label" for="name">Nome</label>
-                        <input class="form-group__input" type="text" id="name" name="user_name">
+                        <input class="form-group__input form-group__input--error" type="text" id="name" name="user_name">
+                        <span class="form-group__error">Há erro no nome inserido. Caracteres especiais, talvez?</span>
                     </div>
 
                     <div class="form-group form-group--full-width">
                         <label class="form-group__label" for="school">Escola</label>
-                        <input class="form-group__input" type="text" id="school" name="user_name">
+                        <input class="form-group__input form-group__input--error" type="text" id="school" name="user_name">
+                        <span class="form-group__error">Parece que esse é um nome de escola inválido.</span>
                     </div>
 
                     <div class="subscribe__multicol">
@@ -201,7 +203,8 @@
 
                         <div class="form-group" flex="1">
                             <label class="form-group__label" for="teacher">Professor orientador</label>
-                            <input class="form-group__input" type="text" id="teacher" name="teacher">
+                            <input class="form-group__input form-group__input--error" type="text" id="teacher" name="teacher">
+                            <span class="form-group__error">Há um erro... É mesmo esse o nome do professor?</span>
                         </div>
                     </div>
 

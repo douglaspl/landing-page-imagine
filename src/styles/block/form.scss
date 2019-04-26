@@ -3,9 +3,10 @@
         $this: &;
 
         display: inline-flex;
-        flex: 0 0 auto;
         flex-direction: column;
+        flex: 0 0 auto;
         max-width: 100%;
+        position: relative;
 
         @include media('>sm') {
             align-items: center;
@@ -36,10 +37,10 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            border: 1px solid $leaf-30;
             border-radius: 30px;
-            outline: 0 solid transparent;
+            border: 1px solid $leaf-30;
             flex: 1;
+            outline: 0 solid transparent;
             padding: .5em 1em;
 
             &:focus {
@@ -50,9 +51,20 @@
                 padding-right: 3em;
             }
 
+            &--error:not(:focus) {
+                background-color: transparentize($color-error, .85); 
+            }
+
         }
 
-        
+        &__error {
+            color: $color-error;
+            font-size: 12px;
+            left: 0;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+        }
         
     }
 

@@ -202,6 +202,12 @@ $color-gray--dark: hsla($hue, 10%, 30%, 1) !default;
 $color-gray--darkest: hsla($hue, 12%, 15%, 1) !default;
 $color-black: hsla($hue, 20%, 4%, 1) !default;
 
+// aux
+$color-error: hsla(2, 60%, 45%, 1) !default;
+$color-info: hsla(210, 60%, 36%, 1) !default;
+$color-success: hsl(115, 50%, 40%) !default;
+$color-warning: hsla(38, 87%, 50%, 1) !default;
+
 
 $colors: ((blue-navy-0, $blue-navy-0),
 (blue-navy-5, $blue-navy-5),

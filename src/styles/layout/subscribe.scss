@@ -74,6 +74,7 @@
     }
 
     &__file {
+        display: inline-block;
         margin-bottom: $distance--xs;
 
         @include media('>sm') {
