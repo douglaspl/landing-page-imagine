@@ -16,7 +16,7 @@
         padding-left: $distance--xxl;
         padding-right: $distance--xxl;
 
-        @include media('>md') {
+        @include media('>sm') {
             margin-top: 0 !important;
         }
 
@@ -28,7 +28,13 @@
         margin-bottom: $distance--md;
         margin-top: $distance--lg;
 
+        @include media(">sm") {
+            font-size: 1.25em;
+            min-height: 2em;
+        }
+
         @include media(">md") {
+            font-size: 1.5em;
             min-height: 2em;
         }
 

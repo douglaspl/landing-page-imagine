@@ -12,6 +12,10 @@
             flex-direction: row;
         }
 
+        &--check-radio {
+            flex-direction: row;
+        }
+
         &--full-width {
             width: 100%;
         }
@@ -54,6 +58,7 @@
 
     &__select-wrapper {
         display: inline-flex;
+        flex: 1;
         position: relative;
     }
 

@@ -1,11 +1,24 @@
 .header {
     background-color: $leaf-30;
-    background-image: url(../images/leaf-1.png), url(../images/leaf-2.png), url(../images/leaf-3.png);
-    background-position: -130px 90%, 550px 50px, 900px -225px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 15%, 18%, 15%;
     color: $color-gray--light;
     z-index: 300;
+
+    @include media('>sm') {
+        background-image: url(../images/leaf-1.png), url(../images/leaf-2.png), url(../images/leaf-3.png);
+        background-position: -60% 90%,  380px 130px, 105% -260px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 50%, 50%, 30%;
+    }
+
+    @include media('>md') {
+        background-position: -130px 90%, 550px 50px, 900px -225px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 15%, 18%, 15%;       
+    }
+
+    @include media('>md') {
+        background-position: -130px 90%, 450px 60px, 800px -200px;
+    }
 
     &__container {
         // @include media('>lg') {
@@ -74,9 +87,15 @@
         flex-direction: row;
 
         > img {
-            margin-right: $distance--lg;
-            height: 95px;
+            margin: $distance--sm;
+            height: 75px;
             width: auto;
+
+            @include media('>md') {
+                margin-left: 0;
+                margin-right: $distance--lg;
+            }
+
         }
 
     }

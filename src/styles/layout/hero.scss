@@ -41,13 +41,14 @@
         }
 
         img {
-            margin-bottom: $distance--md;
+            margin-bottom: $distance--xl;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
 
             @include media('>md') {
                 margin-bottom: 0;
+                margin-left: 0;
             }
         }
 
@@ -77,13 +78,15 @@
     &__title {
         font-family: $font--title;
         font-size: 1.25rem;
-        font-size: calc(1rem + .35vw);
+        font-size: calc(1rem + 2vw);
         font-weight: 900;
         line-height: 1.2;
         margin: 1em 0;
         text-transform: uppercase;
 
         @include media('>md') {
+            font-size: 1.25rem;
+            font-size: calc(1rem + .35vw);
             line-height: 1.4;
         }
 
