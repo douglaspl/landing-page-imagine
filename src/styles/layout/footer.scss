@@ -15,7 +15,7 @@
       &:not(:first-of-type) {
         margin-top: $distance--md;
       }
-      
+
     }
 
   }
@@ -31,7 +31,7 @@
     $size: 2.75rem; 
 
     align-items: center;
-    border: 1px solid $color-gray--darkest;
+    border: 1px solid currentColor;
     border-radius: 50%;
     color: inherit;
     display: inline-flex;
@@ -39,8 +39,13 @@
     height: $size;
     justify-content: center;
     margin-left: $distance--xs;
-    // outline: 1px solid crimson;
     width: $size;
+
+    &:hover {
+      color: $leaf-40;
+      fill: currentColor;
+    }
+
   }
 
 }
