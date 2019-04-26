@@ -56,7 +56,7 @@ var player = document.getElementById('player');
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
-  player.src = "https://player.vimeo.com/video/288253496"
+  player.src = "https://player.vimeo.com/video/288253496?autoplay=1"
   modal.style.display = "flex";
 }
 
@@ -69,6 +69,7 @@ span.onclick = function() {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
+    player.src = "";
     modal.style.display = "none";
   }
 }
