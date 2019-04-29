@@ -63,6 +63,7 @@
             font-size: 12px;
             left: 0;
             position: absolute;
+            text-align: right;
             top: 100%;
             width: 100%;
         }
@@ -84,4 +85,10 @@
         z-index: 2;
     }
 
+}
+
+
+// Por conta do framework do Orsatti
+.input-validation-error {
+    background-color: transparentize($color-error, .85); 
 }
