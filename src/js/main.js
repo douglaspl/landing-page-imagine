@@ -76,3 +76,15 @@ window.onclick = function(event) {
 }
 
 // ----- MODAL DE EXEMPLOS FIM
+
+// ---- Fechar alerta de sucesso
+
+var sucess =  document.getElementsByClassName("alert")[0];
+var closeSucess = document.getElementsByClassName("alert__close")[0];
+
+
+closeSucess.addEventListener('click', function() {
+  sucess.classList.remove("alert--is-show");
+});
+
+
