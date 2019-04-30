@@ -26,11 +26,6 @@
         line-height: 1;
         margin-bottom: $distance--lg;
         margin-top: $distance--lg;
-
-        @include media('>sm') {
-            margin-top: 0;
-        }
-
     }
 
 }

@@ -7,6 +7,20 @@
     &--rotate90 {
         transform: rotate(90deg);
     }
+ 
+    &--xl {
+        $size: 3rem;
+
+        height: $size;
+        width: $size;        
+    }
+ 
+    &--xxl {
+        $size: 6rem;
+
+        height: $size;
+        width: $size;        
+    }
     
 }
 
@@ -27,19 +41,14 @@
         width: 94%;
     }
 
-    // @include media('>md') {
-    //     max-width: 720px;
-    // }
-
     @include media('>lg') {
-        // max-width: 960px;
         max-width: 1080px;
     }
 
     @include media('>xl') {
-        // max-width: 1140px;
         max-width: 1620px;
     }
+    
 }
 
 .img-as-bg {
